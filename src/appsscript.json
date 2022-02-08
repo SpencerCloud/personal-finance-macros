@@ -1,0 +1,40 @@
+{
+  "timeZone": "America/New_York",
+  "dependencies": {
+  },
+  "exceptionLogging": "STACKDRIVER",
+  "runtimeVersion": "V8",
+  "sheets": {
+    "macros": [{
+      "menuName": "convertCapitalOneCCCsvs",
+      "functionName": "convertCapitalOneCCCsvs"
+    }, {
+      "menuName": "CopyPasteTest",
+      "functionName": "CopyPasteTest"
+    }, {
+      "menuName": "ConvertCapitalOneCcCsvs",
+      "functionName": "ConvertCapitalOneCcCsvs"
+    }, {
+      "menuName": "fillInCashBlanks",
+      "functionName": "fillInCashBlanks"
+    }, {
+      "menuName": "convertCapitalOncCsvsToCashBalances",
+      "functionName": "convertCapitalOncCsvsToCashBalances"
+    }, {
+      "menuName": "ConvertCapitalOncCsvsToCashBalances",
+      "functionName": "ConvertCapitalOncCsvsToCashBalances"
+    }, {
+      "menuName": "FillInSelectedCashBlanks",
+      "functionName": "FillInSelectedCashBlanks"
+    }, {
+      "menuName": "ConvertCreditCardCsv",
+      "functionName": "ConvertCreditCardCsv"
+    }, {
+      "menuName": "test",
+      "functionName": "test"
+    }, {
+      "menuName": "doGet",
+      "functionName": "doGet"
+    }]
+  }
+}

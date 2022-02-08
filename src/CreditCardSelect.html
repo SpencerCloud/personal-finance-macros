@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <base target="_top">
+  </head>
+  <body>
+    <script>
+      function preventFormSubmit() {
+        var forms = document.querySelectorAll('form');
+        for (var i = 0; i < forms.length; i++) {
+          forms[i].addEventListener('submit', function(event) {
+            event.preventDefault();
+          });
+        }
+      }
+      window.addEventListener('load', preventFormSubmit);
+
+      function submitCreditCardForm(formObject) {
+        google.script.run.submitCreditCardAndConvert(formObject);
+      }
+    </script>
+
+    <form id="credit-card" onSubmit="submitCreditCardForm(this)">
+      <input type="radio" name="credit-card" id="venture-button" value="Venture"><label for="venture-button">Venture</label><br>
+      <input type="radio" name="credit-card" id="spark-button" value="Spark"><label for="spark-button">Spark</label><br>
+      <input type="radio" name="credit-card" id="sapphire-reserve-button" value="Sapphire Reserve"><label for="sapphire-reserve-button">Sapphire Reserve</label><br>
+      <input type="radio" name="credit-card" id="freedom-unlimited-button" value="Freedom Unlimited"><label for="freedom-unlimited-button">Freedom Unlimited</label><br>
+
+      <button type="submit">Convert CSV to Balances</button>
+    </form>
+  </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
