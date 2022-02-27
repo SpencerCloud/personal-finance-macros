@@ -16,6 +16,7 @@ function submitCreditCardAndConvert(formObject) {
       break;
     case 'Sapphire Reserve':
     case 'Freedom Unlimited':
+    case 'Ink':
       convertChaseCsvToBalances(creditCard);
   }
 }
