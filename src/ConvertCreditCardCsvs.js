@@ -2,7 +2,7 @@ const creditCardCsvSpreadsheet = SpreadsheetApp.getActiveSpreadsheet().getSheetB
 const creditCardBalancesSheet = SpreadsheetApp.getActiveSpreadsheet().getSheetByName('Credit Cards');
 
 function ConvertCreditCardCsv() {
-  const selectCreditCardHtml = HtmlService.createHtmlOutputFromFile('CreditCardSelect');
+  const selectCreditCardHtml = HtmlService.createHtmlOutputFromFile('helpers/CreditCardSelect');
   SpreadsheetApp.getUi().showModalDialog(selectCreditCardHtml, 'Select Credit Card to Convert');
 }
 
