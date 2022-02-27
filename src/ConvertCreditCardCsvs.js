@@ -9,10 +9,10 @@ function ConvertCreditCardCsv() {
 function submitCreditCardAndConvert(formObject) {
   const creditCard = formObject['credit-card'];
 
-  switch (creditCart) {
+  switch (creditCard) {
     case 'Venture':
     case 'Spark':
-      convertCapitalOneCsvToBalances(creditCart);
+      convertCapitalOneCsvToBalances(creditCard);
       break;
     case 'Sapphire Reserve':
     case 'Freedom Unlimited':
