@@ -9,14 +9,14 @@ function ConvertCreditCardCsv() {
 function submitCreditCardAndConvert(formObject) {
   const creditCard = formObject['credit-card'];
 
-  if ('Venture' === creditCard) {
-    convertCapitalOneCsvToBalances('Venture');
-  } else if ('Spark' === creditCard) {
-    convertCapitalOneCsvToBalances('Spark');
-  } else if ('Sapphire Reserve' === creditCard) {
-    convertChaseCsvToBalances('Sapphire Reserve');
-  } else if ('Freedom Unlimited' === creditCard) {
-    convertChaseCsvToBalances('Freedom Unlimited');
+  switch (creditCart) {
+    case 'Venture':
+    case 'Spark':
+      convertCapitalOneCsvToBalances(creditCart);
+      break;
+    case 'Sapphire Reserve':
+    case 'Freedom Unlimited':
+      convertChaseCsvToBalances(creditCard);
   }
 }
 
